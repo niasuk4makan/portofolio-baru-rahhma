@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahh Mania Ainnur — Portofolio | XI RPL SMKN 6 Surakarta</title>
+    <meta name="description"
+        content="Website portofolio pribadi Rahh Mania Ainnur, siswi kelas XI Rekayasa Perangkat Lunak (RPL) di SMKN 6 Surakarta. Menampilkan profil, kemampuan, pendidikan, dan karya proyek.">
+    <meta name="author" content="Rahh Mania Ainnur">
+    <meta name="theme-color" content="#0a0d1a">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Rahh Mania Ainnur — Portofolio Pribadi">
+    <meta property="og:description"
+        content="Siswi XI RPL SMKN 6 Surakarta yang tertarik dengan dunia teknologi, pemrograman, desain, dan pengembangan website.">
+    <meta property="og:image" content="assets/img/profile.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts: Poppins & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- ======================================================================
+         1. NAVBAR
+         ====================================================================== -->
+    <nav class="navbar" id="navbar" aria-label="Navigasi Utama">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Rahh Mania - Beranda">
+                <span class="logo-mark">&lt;R /&gt;</span>
+                <span class="logo-text">Rahh Mania</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Buka navigasi menu" aria-expanded="false"
+                aria-controls="navMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ======================================================================
+             2. HERO SECTION
+             ====================================================================== -->
+        <section id="home" class="hero">
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-glow hero-glow-1"></div>
+                <div class="hero-glow hero-glow-2"></div>
+                <div class="hero-grid"></div>
+            </div>
+
+            <div class="container hero-container">
+                <!-- Hero Left: Content -->
+                <div class="hero-content">
+                    <div class="hero-greeting reveal">
+                        Hello, I'm
+                    </div>
+
+                    <h1 class="hero-name reveal">
+                        <span class="hero-name-line">Rahh Mania</span>
+                        <span class="hero-name-line gradient-text">Ainnur</span>
+                    </h1>
+
+                    <div class="hero-role reveal">
+                        <span class="role-dot" aria-hidden="true"></span>
+                        <span>XI RPL Student at SMKN 6 Surakarta</span>
+                    </div>
+
+                    <p class="hero-desc reveal">
+                        Saya adalah siswi RPL yang tertarik dengan dunia teknologi, pemrograman, desain,
+                        dan pengembangan website. Saya senang belajar hal baru, bereksplorasi membuat project,
+                        dan terus mengembangkan potensi diri di bidang teknologi digital.
+                    </p>
+
+                    <div class="hero-actions reveal">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Lihat Portfolio</span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-ghost">
+                            <span>Hubungi Saya</span>
+                            <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials reveal">
+                        <a href="https://instagram.com/nnniaww.mtcc" target="_blank" rel="noopener noreferrer"
+                            class="social-btn" aria-label="Kunjungi Instagram @nnniaww.mtcc" title="Instagram">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://tiktok.com/@nnarhh" target="_blank" rel="noopener noreferrer"
+                            class="social-btn" aria-label="Kunjungi TikTok @nnarhh" title="TikTok">
+                            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://wa.me/6285970848016" target="_blank" rel="noopener noreferrer"
+                            class="social-btn" aria-label="Chat WhatsApp 085970848016" title="WhatsApp">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Photo & Visual Badges -->
+                <div class="hero-visual reveal">
+                    <div class="hero-card">
+                        <div class="hero-card-glow" aria-hidden="true"></div>
+                        <div class="hero-photo-wrap">
+                            <img src="assets/img/profile.jpg"
+                                alt="Foto profil Rahh Mania Ainnur - Siswi XI RPL SMKN 6 Surakarta" class="hero-photo"
+                                width="380" height="475" loading="eager">
+                        </div>
+
+                        <div class="hero-badge badge-top">
+                            <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                            <span>RPL Student</span>
+                        </div>
+                        <div class="hero-badge badge-bottom">
+                            <span class="badge-pulse" aria-hidden="true"></span>
+                            <span>SMKN 6 Surakarta</span>
+                        </div>
+                    </div>
+
+                    <!-- Decorative Floating Badges -->
+                    <div class="hero-float-chip chip-1" aria-hidden="true">
+                        <i class="fa-brands fa-html5"></i> HTML5
+                    </div>
+                    <div class="hero-float-chip chip-2" aria-hidden="true">
+                        <i class="fa-brands fa-css3-alt"></i> CSS3
+                    </div>
+                    <div class="hero-float-chip chip-3" aria-hidden="true">
+                        <i class="fa-brands fa-js"></i> JavaScript
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <a href="#about" class="scroll-indicator" aria-label="Gulir ke bagian About">
+                <span class="mouse" aria-hidden="true"><span class="wheel"></span></span>
+                <span class="scroll-label">SCROLL</span>
+            </a>
+        </section>
+
+        <!-- ======================================================================
+             3. ABOUT ME SECTION
+             ====================================================================== -->
+        <section id="about" class="section about">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="section-kicker">// About Me</p>
+                    <h2 class="section-title">Mengenal <span class="gradient-text">Saya Lebih Dekat</span></h2>
+                    <p class="section-sub">
+                        Profil singkat, latar belakang kejuruan, dan motivasi belajar di dunia teknologi informasi.
+                    </p>
+                </header>
+
+                <div class="about-grid">
+                    <!-- Bio Narrative Card -->
+                    <div class="about-card reveal">
+                        <div class="about-card-icon" aria-hidden="true">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <p class="about-text">
+                            Saya adalah siswi kelas XI Rekayasa Perangkat Lunak (RPL) di SMKN 6 Surakarta.
+                            Saya sedang mengembangkan kemampuan di bidang teknologi dan pembuatan aplikasi
+                            maupun website. Saya senang mempelajari hal-hal baru, mencoba membuat project,
+                            dan mengembangkan kemampuan saya di dunia pemrograman.
+                        </p>
+                        <div class="about-pills">
+                            <span class="about-pill"><i class="fa-solid fa-code" aria-hidden="true"></i> Web
+                                Development</span>
+                            <span class="about-pill"><i class="fa-solid fa-palette" aria-hidden="true"></i> UI/UX
+                                Design</span>
+                            <span class="about-pill"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                                Vocational High School</span>
+                            <span class="about-pill"><i class="fa-solid fa-heart" aria-hidden="true"></i> Tech
+                                Enthusiast</span>
+                        </div>
+                    </div>
+
+                    <!-- Personal Information Grid -->
+                    <div class="about-facts reveal">
+                        <div class="fact">
+                            <div>
+                                <span class="fact-label">Nama Lengkap</span>
+                                <h3 class="fact-value">Rahh Mania Ainnur</h3>
+                            </div>
+                            <i class="fa-solid fa-user-check fact-icon" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="fact">
+                            <div>
+                                <span class="fact-label">Asal Sekolah</span>
+                                <h3 class="fact-value">SMKN 6 Surakarta</h3>
+                            </div>
+                            <i class="fa-solid fa-school fact-icon" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="fact">
+                            <div>
+                                <span class="fact-label">Jurusan</span>
+                                <h3 class="fact-value">Rekayasa Perangkat Lunak</h3>
+                            </div>
+                            <i class="fa-solid fa-laptop-code fact-icon" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="fact">
+                            <div>
+                                <span class="fact-label">Kelas Saat Ini</span>
+                                <h3 class="fact-value">Kelas XI RPL</h3>
+                            </div>
+                            <i class="fa-solid fa-layer-group fact-icon" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+             4. SKILLS SECTION
+             ====================================================================== -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="section-kicker">// Skills</p>
+                    <h2 class="section-title">Skills yang <span class="gradient-text">Sedang Saya Pelajari</span></h2>
+                    <p class="section-sub">
+                        Kumpulan kemampuan dan teknologi yang aktif saya pelajari dan kembangkan selama masa studi
+                        kejuruan RPL di SMKN 6 Surakarta.
+                    </p>
+                </header>
+
+                <div class="skills-grid">
+                    <!-- HTML Card -->
+                    <article class="skill-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon html"><i class="fa-brands fa-html5" aria-hidden="true"></i></span>
+                            <span class="skill-level">Sedang dipelajari</span>
+                        </div>
+                        <h3 class="skill-name">HTML</h3>
+                        <p class="skill-desc">Mempelajari struktur semantik halaman web, form interaktif, dan standar
+                            aksesibilitas dasar.</p>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="Tingkat belajar HTML 75%">
+                            <span class="skill-fill" style="--val: 75%;"></span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag-pill">Semantic HTML</span>
+                            <span class="skill-tag-pill">Form Elements</span>
+                            <span class="skill-tag-pill">Web Structure</span>
+                        </div>
+                    </article>
+
+                    <!-- CSS Card -->
+                    <article class="skill-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon css"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i></span>
+                            <span class="skill-level">Sedang dipelajari</span>
+                        </div>
+                        <h3 class="skill-name">CSS</h3>
+                        <p class="skill-desc">Mempelajari tata letak responsif dengan Flexbox & CSS Grid, styling
+                            antarmuka modern, serta animasi transisi.</p>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="Tingkat belajar CSS 70%">
+                            <span class="skill-fill" style="--val: 70%;"></span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag-pill">Flexbox & Grid</span>
+                            <span class="skill-tag-pill">Responsive Design</span>
+                            <span class="skill-tag-pill">Keyframes</span>
+                        </div>
+                    </article>
+
+                    <!-- JavaScript Card -->
+                    <article class="skill-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon js"><i class="fa-brands fa-js" aria-hidden="true"></i></span>
+                            <span class="skill-level">Sedang dipelajari</span>
+                        </div>
+                        <h3 class="skill-name">JavaScript</h3>
+                        <p class="skill-desc">Mempelajari logika pemrograman web, manipulasi DOM, penanganan event
+                            pengguna, dan interaksi interaktif.</p>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="Tingkat belajar JavaScript 55%">
+                            <span class="skill-fill" style="--val: 55%;"></span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag-pill">DOM Manipulation</span>
+                            <span class="skill-tag-pill">Event Handling</span>
+                            <span class="skill-tag-pill">ES6 Basics</span>
+                        </div>
+                    </article>
+
+                    <!-- UI/UX Design Card -->
+                    <article class="skill-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon uiux"><i class="fa-solid fa-pen-ruler"
+                                    aria-hidden="true"></i></span>
+                            <span class="skill-level">Sedang dipelajari</span>
+                        </div>
+                        <h3 class="skill-name">UI/UX Design</h3>
+                        <p class="skill-desc">Mempelajari prinsip desain antarmuka, pemilihan palet warna estetis,
+                            hierarki tipografi, dan pembuatan wireframe.</p>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="Tingkat belajar UI/UX Design 60%">
+                            <span class="skill-fill" style="--val: 60%;"></span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag-pill">Wireframing</span>
+                            <span class="skill-tag-pill">Color Harmony</span>
+                            <span class="skill-tag-pill">User Flow</span>
+                        </div>
+                    </article>
+
+                    <!-- Web Development Card -->
+                    <article class="skill-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon web"><i class="fa-solid fa-globe" aria-hidden="true"></i></span>
+                            <span class="skill-level">Sedang dipelajari</span>
+                        </div>
+                        <h3 class="skill-name">Web Development</h3>
+                        <p class="skill-desc">Mengintegrasikan HTML, CSS, dan JavaScript untuk mewujudkan desain
+                            antarmuka menjadi halaman web fungsional.</p>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="Tingkat belajar Web Development 65%">
+                            <span class="skill-fill" style="--val: 65%;"></span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag-pill">Frontend Basics</span>
+                            <span class="skill-tag-pill">Component Layout</span>
+                            <span class="skill-tag-pill">Clean Code</span>
+                        </div>
+                    </article>
+
+                    <!-- Basic Programming Card -->
+                    <article class="skill-card reveal">
+                        <div class="skill-top">
+                            <span class="skill-icon prog"><i class="fa-solid fa-terminal" aria-hidden="true"></i></span>
+                            <span class="skill-level">Sedang dipelajari</span>
+                        </div>
+                        <h3 class="skill-name">Basic Programming</h3>
+                        <p class="skill-desc">Mempelajari konsep dasar algoritma, percabangan logika, perulangan, dan
+                            pemecahan masalah komputasional.</p>
+                        <div class="skill-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                            aria-valuemax="100" aria-label="Tingkat belajar Basic Programming 50%">
+                            <span class="skill-fill" style="--val: 50%;"></span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag-pill">Algorithm</span>
+                            <span class="skill-tag-pill">Control Flow</span>
+                            <span class="skill-tag-pill">Problem Solving</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+             5. PROJECTS SECTION
+             ====================================================================== -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="section-kicker">// My Projects</p>
+                    <h2 class="section-title">Project <span class="gradient-text">Showcase</span></h2>
+                    <p class="section-sub">
+                        Kumpulan contoh project latihan dan eksplorasi yang realistis sebagai siswi RPL. Mudah
+                        disesuaikan dan dikembangkan seiring bertambahnya karya asli!
+                    </p>
+                </header>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Website Portfolio -->
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <img src="assets/img/projects/portfolio.svg" alt="Preview Website Portfolio Pribadi"
+                                loading="lazy">
+                            <div class="project-cover-overlay"></div>
+                            <span class="project-tag">Showcase</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Website Portfolio</h3>
+                            <p class="project-desc">
+                                Website portofolio pribadi untuk memperkenalkan diri, sekolah, kemampuan, dan proyek
+                                sebagai siswi RPL secara modern dan menarik.
+                            </p>
+                            <ul class="project-stack">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <button type="button" class="project-link btn-view-project" data-project="portfolio"
+                                aria-label="Lihat detail Website Portfolio">
+                                <span>View Project</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Website Informasi Wisata -->
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <img src="assets/img/projects/wisata.jpg" alt="Preview Website Informasi Wisata"
+                                loading="lazy">
+                            <div class="project-cover-overlay"></div>
+                            <span class="project-tag">Showcase</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Website Informasi Wisata</h3>
+                            <p class="project-desc">
+                                Landing page informasi destinasi wisata yang menampilkan galeri visual, deskripsi lokasi
+                                liburan, rekomendasi rute, dan harga tiket.
+                            </p>
+                            <ul class="project-stack">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Responsive</li>
+                            </ul>
+                            <button type="button" class="project-link btn-view-project" data-project="wisata"
+                                aria-label="Lihat detail Website Informasi Wisata">
+                                <span>View Project</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Website / Aplikasi Sekolah -->
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <img src="assets/img/projects/sekolah.jpg" alt="Preview Aplikasi Website Sekolah"
+                                loading="lazy">
+                            <div class="project-cover-overlay"></div>
+                            <span class="project-tag">Showcase</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Aplikasi/Website Sekolah</h3>
+                            <p class="project-desc">
+                                Desain antarmuka portal informasi sekolah kejuruan yang memuat jadwal kelas, modul
+                                kejuruan RPL, dan papan pengumuman siswa.
+                            </p>
+                            <ul class="project-stack">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <button type="button" class="project-link btn-view-project" data-project="sekolah"
+                                aria-label="Lihat detail Aplikasi Website Sekolah">
+                                <span>View Project</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Project Pemrograman Dasar -->
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <img src="assets/img/projects/programming.svg" alt="Preview Project Pemrograman"
+                                loading="lazy">
+                            <div class="project-cover-overlay"></div>
+                            <span class="project-tag">Showcase</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Project Pemrograman</h3>
+                            <p class="project-desc">
+                                Kumpulan latihan logika, algoritma dasar, dan mini-project manipulasi data sebagai
+                                bagian dari tugas kejuruan dan eksplorasi mandiri.
+                            </p>
+                            <ul class="project-stack">
+                                <li>Logic</li>
+                                <li>Algorithm</li>
+                                <li>Basic Code</li>
+                            </ul>
+                            <button type="button" class="project-link btn-view-project" data-project="programming"
+                                aria-label="Lihat detail Project Pemrograman">
+                                <span>View Project</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+             6. EDUCATION SECTION
+             ====================================================================== -->
+        <section id="education" class="section education">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="section-kicker">// Education</p>
+                    <h2 class="section-title">Pendidikan <span class="gradient-text">Saya</span></h2>
+                    <p class="section-sub">
+                        Jejak pendidikan formal dan konsentrasi kejuruan yang sedang saya tempuh.
+                    </p>
+                </header>
+
+                <div class="timeline">
+                    <!-- School Timeline Item -->
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker" aria-hidden="true">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <div class="timeline-card">
+                            <span class="timeline-year">Pendidikan Formal</span>
+                            <h3 class="timeline-title">SMKN 6 Surakarta</h3>
+                            <p class="timeline-desc">
+                                Sekolah Menengah Kejuruan negeri unggulan di Kota Surakarta tempat saya menimba ilmu,
+                                mengasah keterampilan teknis, dan berkolaborasi dalam bidang kejuruan.
+                            </p>
+                            <div class="timeline-meta">
+                                <span class="timeline-meta-badge"><i class="fa-solid fa-location-dot"
+                                        aria-hidden="true"></i> Surakarta, Jawa Tengah</span>
+                                <span class="timeline-meta-badge"><i class="fa-solid fa-circle-check"
+                                        aria-hidden="true"></i> Status: Siswi Aktif</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Major Timeline Item -->
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker" aria-hidden="true">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div class="timeline-card">
+                            <span class="timeline-year">Kompetensi Keahlian</span>
+                            <h3 class="timeline-title">Rekayasa Perangkat Lunak (RPL)</h3>
+                            <p class="timeline-desc">
+                                Jurusan vokasi yang fokus pada pembuatan perangkat lunak, pemrograman web dan perangkat
+                                bergerak, manajemen basis data, serta pemecahan masalah algoritma.
+                            </p>
+                            <div class="timeline-meta">
+                                <span class="timeline-meta-badge"><i class="fa-solid fa-code" aria-hidden="true"></i>
+                                    Web & App Dev</span>
+                                <span class="timeline-meta-badge"><i class="fa-solid fa-database"
+                                        aria-hidden="true"></i> Basis Data</span>
+                                <span class="timeline-meta-badge"><i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+                                    Pemodelan PL</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Grade Level Timeline Item -->
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker" aria-hidden="true">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <div class="timeline-card">
+                            <span class="timeline-year">Tingkat Pendidikan</span>
+                            <h3 class="timeline-title">Kelas XI (Sebelas)</h3>
+                            <p class="timeline-desc">
+                                Tingkat kelas yang sedang saya jalani saat ini, dengan fokus memperdalam praktik
+                                pemrograman web, eksplorasi antarmuka pengguna, dan penyiapan mini-project kejuruan.
+                            </p>
+                            <div class="timeline-meta">
+                                <span class="timeline-meta-badge"><i class="fa-solid fa-calendar-check"
+                                        aria-hidden="true"></i> Tahun Ajaran 2025/2026</span>
+                                <span class="timeline-meta-badge"><i class="fa-solid fa-arrow-trend-up"
+                                        aria-hidden="true"></i> Tahap Pengembangan Skill</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================
+             7. CONTACT SECTION
+             ====================================================================== -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="section-kicker">// Contact</p>
+                    <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                    <p class="section-sub">
+                        Mari terhubung untuk berdiskusi seputar tugas sekolah, kolaborasi project, atau sekadar berteman
+                        di sosial media!
+                    </p>
+                </header>
+
+                <!-- Social Cards Grid -->
+                <div class="contact-grid">
+                    <!-- Instagram Card -->
+                    <a class="contact-card reveal" href="https://instagram.com/nnniaww.mtcc" target="_blank"
+                        rel="noopener noreferrer" aria-label="Buka profil Instagram @nnniaww.mtcc">
+                        <span class="contact-icon ig" aria-hidden="true"><i class="fa-brands fa-instagram"></i></span>
+                        <span class="contact-info">
+                            <span class="contact-label">Instagram</span>
+                            <span class="contact-handle">@nnniaww.mtcc</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square contact-arrow" aria-hidden="true"></i>
+                    </a>
+
+                    <!-- TikTok Card -->
+                    <a class="contact-card reveal" href="https://tiktok.com/@nnarhh" target="_blank"
+                        rel="noopener noreferrer" aria-label="Buka akun TikTok @nnarhh">
+                        <span class="contact-icon tt" aria-hidden="true"><i class="fa-brands fa-tiktok"></i></span>
+                        <span class="contact-info">
+                            <span class="contact-label">TikTok</span>
+                            <span class="contact-handle">@nnarhh</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square contact-arrow" aria-hidden="true"></i>
+                    </a>
+
+                    <!-- WhatsApp Card -->
+                    <a class="contact-card reveal" href="https://wa.me/6285970848016" target="_blank"
+                        rel="noopener noreferrer" aria-label="Chat WhatsApp ke nomor 085970848016">
+                        <span class="contact-icon wa" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+                        <span class="contact-info">
+                            <span class="contact-label">WhatsApp</span>
+                            <span class="contact-handle">085970848016</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square contact-arrow" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <!-- Direct WhatsApp Quick Message Card -->
+                <div class="contact-quick reveal">
+                    <div class="contact-quick-head">
+                        <h3 class="contact-quick-title">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                            <span>Kirim Pesan Cepat via WhatsApp</span>
+                        </h3>
+                        <button type="button" class="btn-copy-wa" id="copyWaBtn" title="Salin nomor WhatsApp">
+                            <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                            <span>Salin Nomor (085970848016)</span>
+                        </button>
+                    </div>
+
+                    <form class="wa-form" id="waForm">
+                        <div class="wa-input-group">
+                            <label for="waSenderName" class="wa-input-label">Nama Anda (Opsional):</label>
+                            <input type="text" id="waSenderName" class="wa-input"
+                                placeholder="Masukkan nama atau panggilan Anda..." autocomplete="name">
+                        </div>
+                        <div class="wa-input-group">
+                            <label for="waMessageText" class="wa-input-label">Pesan:</label>
+                            <textarea id="waMessageText" class="wa-textarea"
+                                placeholder="Tuliskan pesan atau sapaan Anda di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-wa-send">
+                            <span>Kirim ke WhatsApp</span>
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================================================================
+         8. FOOTER
+         ====================================================================== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#home" class="footer-logo" aria-label="Rahh Mania Ainnur - Ke Atas">
+                <span class="logo-mark">&lt;R /&gt;</span>
+                <span class="logo-text">Rahh Mania Ainnur</span>
+            </a>
+            <p class="footer-motto">
+                "Terus belajar, bereksplorasi, dan berkarya melalui baris kode dan desain."
+            </p>
+            <div class="footer-socials">
+                <a href="https://instagram.com/nnniaww.mtcc" target="_blank" rel="noopener noreferrer"
+                    class="social-btn" aria-label="Instagram Rahh Mania Ainnur">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://tiktok.com/@nnarhh" target="_blank" rel="noopener noreferrer" class="social-btn"
+                    aria-label="TikTok Rahh Mania Ainnur">
+                    <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                </a>
+                <a href="https://wa.me/6285970848016" target="_blank" rel="noopener noreferrer" class="social-btn"
+                    aria-label="WhatsApp Rahh Mania Ainnur">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                </a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Rahh Mania Ainnur. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ======================================================================
+         9. PROJECT DETAIL MODAL
+         ====================================================================== -->
+    <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <button type="button" class="modal-close" id="modalClose" aria-label="Tutup jendela detail project">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+            <img src="assets/img/projects/portfolio.svg" alt="Preview Project" class="modal-header-img" id="modalImg">
+            <div class="modal-body">
+                <span class="modal-tag" id="modalTag">Showcase Project</span>
+                <h3 class="modal-title" id="modalTitle">Judul Project</h3>
+                <p class="modal-desc" id="modalDesc">Deskripsi lengkap mengenai project yang sedang dikembangkan.</p>
+
+                <h4 class="modal-features-title">Fitur & Sorotan Utama:</h4>
+                <ul class="modal-features-list" id="modalFeatures">
+                    <!-- Dinamis via main.js -->
+                </ul>
+
+                <h4 class="modal-features-title">Teknologi yang Digunakan:</h4>
+                <div class="modal-tech-stack" id="modalStack">
+                    <!-- Dinamis via main.js -->
+                </div>
+
+                <div class="modal-footer">
+                    <a href="#contact" class="btn btn-primary"
+                        onclick="document.getElementById('projectModal').classList.remove('open'); document.body.style.overflow = '';">
+                        <span>Diskusikan Project Ini</span>
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================================
+         10. BACK TO TOP BUTTON & TOAST NOTIFICATION
+         ====================================================================== -->
+    <button type="button" class="back-to-top" id="backToTop" aria-label="Kembali ke atas halaman">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <div class="toast" id="toast" role="alert" aria-live="polite">
+        <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+        <span>Pesan notifikasi</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+
+</html>

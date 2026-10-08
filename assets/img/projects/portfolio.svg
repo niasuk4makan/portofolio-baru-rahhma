@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d1b"/>
+      <stop offset="50%" stop-color="#141733"/>
+      <stop offset="100%" stop-color="#0e1124"/>
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.08)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="50" result="blur" />
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-grad)"/>
+  <!-- Ambient glow spheres -->
+  <circle cx="180" cy="110" r="160" fill="#8b5cf6" opacity="0.22" filter="url(#glow)"/>
+  <circle cx="640" cy="270" r="150" fill="#06b6d4" opacity="0.2" filter="url(#glow)"/>
+  <circle cx="400" cy="410" r="130" fill="#ec4899" opacity="0.16" filter="url(#glow)"/>
+
+  <!-- Browser frame mockup -->
+  <rect x="70" y="40" width="660" height="370" rx="16" fill="#10142d" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+  <!-- Browser top bar -->
+  <rect x="70" y="40" width="660" height="40" rx="16" fill="#181f3d"/>
+  <rect x="70" y="68" width="660" height="12" fill="#181f3d"/>
+  <circle cx="98" cy="60" r="5" fill="#ef4444"/>
+  <circle cx="116" cy="60" r="5" fill="#eab308"/>
+  <circle cx="134" cy="60" r="5" fill="#22c55e"/>
+  <rect x="165" y="49" width="300" height="22" rx="6" fill="#0c1022" stroke="rgba(255,255,255,0.08)"/>
+  <text x="180" y="64" fill="#94a3b8" font-family="'Segoe UI', -apple-system, sans-serif" font-size="11">https://rahhmania.portfolio.dev</text>
+
+  <!-- Hero inside mockup -->
+  <!-- Left content -->
+  <rect x="110" y="115" width="105" height="20" rx="10" fill="rgba(139,92,246,0.2)"/>
+  <text x="122" y="129" fill="#c084fc" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">&lt;Hello World /&gt;</text>
+  <text x="110" y="172" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="28" font-weight="bold">Rahh Mania <tspan fill="url(#accent-grad)">Ainnur</tspan></text>
+  <text x="110" y="200" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="600">XI RPL Student at SMKN 6 Surakarta</text>
+  <rect x="110" y="222" width="280" height="8" rx="4" fill="rgba(255,255,255,0.15)"/>
+  <rect x="110" y="238" width="220" height="8" rx="4" fill="rgba(255,255,255,0.1)"/>
+
+  <!-- Buttons in mockup -->
+  <rect x="110" y="270" width="120" height="34" rx="8" fill="url(#accent-grad)"/>
+  <text x="128" y="292" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold">Lihat Portfolio</text>
+  <rect x="245" y="270" width="115" height="34" rx="8" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+  <text x="264" y="292" fill="#e2e8f0" font-family="'Segoe UI', sans-serif" font-size="12">Hubungi Saya</text>
+
+  <!-- Right card avatar in mockup -->
+  <rect x="440" y="110" width="250" height="260" rx="18" fill="url(#card-grad)" stroke="rgba(255,255,255,0.16)"/>
+  <rect x="460" y="130" width="210" height="170" rx="14" fill="#192040" stroke="rgba(139,92,246,0.35)"/>
+  <circle cx="565" cy="190" r="42" fill="url(#accent-grad)" opacity="0.6"/>
+  <circle cx="565" cy="182" r="22" fill="#ffffff" opacity="0.95"/>
+  <path d="M 535 235 Q 565 205 595 235 Z" fill="#ffffff" opacity="0.95"/>
+  
+  <!-- Mini tags in mockup -->
+  <rect x="460" y="315" width="62" height="24" rx="6" fill="rgba(56,189,248,0.18)" stroke="rgba(56,189,248,0.3)" stroke-width="1"/>
+  <text x="473" y="331" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">HTML5</text>
+  <rect x="532" y="315" width="58" height="24" rx="6" fill="rgba(236,72,153,0.18)" stroke="rgba(236,72,153,0.3)" stroke-width="1"/>
+  <text x="546" y="331" fill="#f472b6" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">CSS3</text>
+  <rect x="600" y="315" width="70" height="24" rx="6" fill="rgba(234,179,8,0.18)" stroke="rgba(234,179,8,0.3)" stroke-width="1"/>
+  <text x="612" y="331" fill="#facc15" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold">JavaScript</text>
+</svg>
